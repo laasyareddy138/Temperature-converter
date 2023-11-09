@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="tempconvbody.css">
+</head>
+<body>
+   
+    <div class="container" style="text-align: center;">
+    <h1>Temperature Conversion</h1>
+    <p>FROM</p>
+   
+    <select class="custom" id="from" style="text-align: center; border-radius: 50px;">
+        
+        <option value = "Celsius">Celsius</option>
+        <option value = "Fahrenhiet">Fahrenhiet</option>
+        <option value = "Kelvin">Kelvin</option>
+    </select>
+
+   <p>TO</p>
+    <select class="custom" id="to" style="text-align: center; border-radius: 25px;">
+        <option value = "Celsius">Celsius</option>
+        <option value = "Fahrenhiet">Fahrenhiet</option>
+        <option value = "Kelvin">Kelvin</option>
+    </select>
+
+    <p>Enter the temperature: </p>
+    
+    <input type="number" id="numbinput">
+<br>
+<br>
+<button id="button" onclick="GetValue()" style="text-align: center; border-radius: 25px;">CONVERT</BUTTON>
+
+<div id="textDisplay" style="font-size: xx-large;"></div>
+    </div>
+<script src="tempconv.js"></script>
+</body>
+</html>
